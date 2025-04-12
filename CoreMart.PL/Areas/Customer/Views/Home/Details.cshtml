@@ -1,0 +1,145 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<section class="product-section scroll-reveal">
+    <div class="container ">
+        <div class="row mb-5 scroll-reveal">
+            <!-- Product Image -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="product-card">
+                    <img src="@Model.ImageURL" alt="@Model.Name" class="product-image">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-lg-6">
+                <h1 class="product-title">@Model.Name</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="ms-2">5 reviews</span>
+                </div>
+
+                <div class="product-price text-danger">EGP @Model.Price</div>
+
+
+                <p class="product-description mt-5">
+                    @Model.Description
+                </p>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+        </div>
+
+
+        <!-- Reviews -->
+        <h2 class="section-title-rev scroll-reveal">Reviews</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">JD</div>
+                        <div>
+                            <div class="review-author">JOHN DOE</div>
+                            <div class="review-date">august 14, 2018</div>
+                        </div>
+                        <div class="product-rating ms-auto">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">JD</div>
+                        <div>
+                            <div class="review-author">JOHN DOE</div>
+                            <div class="review-date">august 14, 2018</div>
+                        </div>
+                        <div class="product-rating ms-auto">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">JD</div>
+                        <div>
+                            <div class="review-author">JOHN DOE</div>
+                            <div class="review-date">august 14, 2018</div>
+                        </div>
+                        <div class="product-rating ms-auto">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">JD</div>
+                        <div>
+                            <div class="review-author">JOHN DOE</div>
+                            <div class="review-date">august 14, 2018</div>
+                        </div>
+                        <div class="product-rating ms-auto">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">JD</div>
+                        <div>
+                            <div class="review-author">JOHN DOE</div>
+                            <div class="review-date">august 14, 2018</div>
+                        </div>
+                        <div class="product-rating ms-auto">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

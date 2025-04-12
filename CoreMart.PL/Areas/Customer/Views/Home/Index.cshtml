@@ -1,0 +1,342 @@
+﻿
+@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container sliddddder scroll-reveal">
+    <section class="hero">
+        <div class="hero-slides">
+
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+
+                <div class="image">
+                    <img src="pic/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hero-title">New Service</h1>
+                    <h2 class="hero-subtitle">Service Name</h2>
+                    <p class="price fw-4">start at 250 EGT</p>
+                    <a href="" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <button class="nav-btn prev-btn">&lt;</button>
+            <button class="nav-btn next-btn">&gt;</button>
+
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+    </section>
+</div>
+
+<div class="caontainer CategorySliiiiiiiiiiider scroll-reveal">
+    <section class="services-section">
+        <div class="services-container">
+            <button class="service-nav-btn service-prev-btn">&lt;</button>
+
+            <div class="services-scroll">
+                <div class="service-card">
+                    <h3 class="service-title">AC SERVICE</h3>
+                    <span class="service-count">5 services</span>
+                    <a href="#" class="show-all">Show All</a>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title">CARPENTRY SERVICE</h3>
+                    <span class="service-count">40 services</span>
+                    <a href="#" class="show-all">Show All</a>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title">CLEANING SERVICES</h3>
+                    <span class="service-count">10 services</span>
+                    <a href="#" class="show-all">Show All</a>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title">ELECTRICAL SERVICE</h3>
+                    <span class="service-count">13 services</span>
+                    <a href="#" class="show-all">Show All</a>
+                </div>
+
+                <!-- Additional cards can be added here -->
+                <div class="service-card">
+                    <h3 class="service-title">PLUMBING SERVICE</h3>
+                    <span class="service-count">8 services</span>
+                    <a href="#" class="show-all">Show All</a>
+                </div>
+            </div>
+
+            <button class="service-nav-btn service-next-btn">&gt;</button>
+        </div>
+
+        <div class="dots-container">
+            <div class="service-dot active"></div>
+            <div class="service-dot"></div>
+            <div class="service-dot"></div>
+            <div class="service-dot"></div>
+            <div class="service-dot"></div>
+        </div>
+    </section>
+</div>
+
+<section class="category-section ">
+    <div class="container ">
+        <div class="section-header">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="row">
+            <!-- Categories Column -->
+            <div class="col-lg-3 col-md-4 category-col ">
+                <div class="category-title">CATEGORY</div>
+                <ul class="category-list sitcky">
+                    
+                        <a class="text-decoration-none" href="/Services/GetByCategory/">
+                        <li class="category-item">
+                            <span class="category-name"> Category Name</span>
+                            <span class="category-plus">+</span>
+                        </li></a>
+                    
+
+
+                </ul>
+            </div>
+
+            <!-- Services Grid Column -->
+            <div class="col-lg-9 col-md-8">
+                <div class="row g-3 ">
+                    @foreach(var product in Model)
+                    {
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <a href="/Customer/Home/Details/@product.Id">
+                                <div class="service-cardd">
+                                    <img src="@product.ImageURL" alt="Service" class="service-img">
+                                    <div class="service-body">
+                                        <h5 class="service-title">@product.Name</h5>
+                                        <div class="service-category">@product.Category.Name</div>
+                                        <div class="service-price">
+                                            <span class="current-price">EGT @product.Price</span>
+                                            <span class="old-price">$60.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+
+
+            </div>
+
+            <section class="offers-section">
+                <div class="section-header">
+                    <h2>Special Offers </h2>
+                </div>
+
+                <div class="offers-container">
+                    <div class="offers-scroll">
+                        
+                            <!-- Offer Card 1 -->
+                            <div class="offer-card">
+                                <img src="pic/img3.jpg" alt="العرض الأول" class="offer-image">
+                                <div class="offer-content">
+                                    <div class="rating">★★★☆☆</div>
+                                    <h3 class="offer-title">ServiceName</h3>
+                                    <p class="offer-description">
+                                        .OfferDescription
+                                    </p>
+
+                                    <div class="offer-price">
+                                        <span class="current-price">EGP 400</span>
+                                        <span class="old-price">500</span>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart">Book Now</button>
+                            </div>
+
+                        
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="scroll-buttons">
+            <button class="scroll-btn prev-btn">←</button>
+            <button class="scroll-btn next-btn">→</button>
+        </div>
+</section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Testimonial Section -->
+<section class="testimonial-section scroll-reveal">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Testimonial Card -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+
+                <div class="card">
+                    <div class="content">
+                        <div class="discount">25% DISCOUNT</div>
+                        <div class="offer">
+                            <h2 class="mb-4 offer">Best Offers</h2>
+                            <a href="" class="btn btn-primary fw-4 ">Get Offers</a>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="pic/letter.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="col-lg-6">
+                <div class="row g-4 services-section">
+                    <!-- Service 1 -->
+                    <div class="col-md-6">
+                        <div class="card">
+
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>Best Online Support</h4>
+                            <p class="text-muted">Hours: 8AM - 11PM</p>
+                        </div>
+                        <!-- <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>Best Online Support</h4>
+                            <p class="text-muted">Hours: 8AM - 11PM</p>
+                        </div> -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="service-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4>Return Policy</h4>
+                            <p class="text-muted">Easy & Free Return of products</p>
+
+                        </div>
+                        <!-- <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>Best Online Support</h4>
+                            <p class="text-muted">Hours: 8AM - 11PM</p>
+                        </div> -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="service-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h4>30% Money Back</h4>
+                            <p class="text-muted">For Order Over $100</p>
+                        </div>
+                        <!-- <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>Best Online Support</h4>
+                            <p class="text-muted">Hours: 8AM - 11PM</p>
+                        </div> -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="service-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h4>Fast Delivery</h4>
+                            <p class="text-muted">Within 2-3 business days</p>
+                            <!-- <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4>Best Online Support</h4>
+                                <p class="text-muted">Hours: 8AM - 11PM</p>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<div class="video scroll-reveal">
+    <div class="overlay"></div>
+    <video autoplay muted src="pic/1ef2e2fb6389606203cecf8fb46abc2f.mp4"></video>
+</div>
+
